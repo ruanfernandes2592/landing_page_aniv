@@ -1,0 +1,15 @@
+@use "variaveis";
+
+.section1__descricao {
+    max-width: 400px;
+
+    p {
+        color: variaveis.$textColor1;
+        text-shadow: #000 2px 3px 2px;
+
+        @media (max-width: 760px) {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}

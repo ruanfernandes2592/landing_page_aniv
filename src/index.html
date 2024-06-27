@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <title>Aniversário</title>
+</head>
+<body>
+    
+    <div class="container">
+        <section class="section1">
+            <div class="section1__descricao">
+                <h1>Olá, Neymar Jr!</h1>
+                <p>
+                    Se você recebeu este link, pode comemorar! Este é um convite especial para comemorarmos o aniversário de um grande amigo seu (Ruan Fernandes). Confirme presença cadastrando seu nome e e-mail nos campos disponíveis neste convite eletrônico. 
+                </p>
+            </div>
+            <div class="section1__cadastro">
+                <h2>Venha fazer parte deste grande dia!</h2>
+                <form class="section1__cadastro__form">
+                    <label>Nome</label><br />
+                    <input type="text" placeholder="Nome e sobrenome" required><br />
+                    <label>E-mail</label><br />
+                    <input type="email" required><br />
+                    <button class="button" type="submit">Cadastrar</button>
+                    <span id="contador"></span>
+                </form>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="section2__atracoes">
+                <h1>Atrações</h1>
+                <ul class="section2__atracoes__itens">
+                    <li class="section2__atracoes__item section2__atracoes__item--banda">
+                        <img src="./images/a7x.webp" alt="">
+                        <p>Apresentação exclusiva da banda <br /> Avenged Sevenfold.</p>
+                    </li>
+                    <li class="section2__atracoes__item section2__atracoes__item--cerveja">
+                        <img src="./images/beer.webp" alt="">
+                        <p>Cervejas artesanais da região <br />Sul do Brasil</p>
+                    </li>
+                    <li class="section2__atracoes__item section2__atracoes__item--comida">
+                        <img src="./images/pratos.jpeg" alt="">
+                        <p>Comida típica do <br /> Nordeste Brasileiro </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="section3__local__endereco">
+                <h1>Local do evento</h1>
+                <h2>Vila Germânica</h2>
+                <p>Endereço: R. Alberto Stein, 199, <br /> Velha, Blumenau - SC, 89036-200</p>
+            </div>
+            <div class="section3__local">
+                <img src="./images/vilager.jpg" alt="">
+            </div>
+        </section>
+    </div>
+</body>
+
+<script src="./scripts/main.js"></script>
+
+</html>

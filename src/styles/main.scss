@@ -1,0 +1,92 @@
+@use "variaveis";
+@use "descricao";
+@use "cadastro";
+@use "atracoes";
+@use "local";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Signika", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-image: linear-gradient(90deg, variaveis.$colormain1, variaveis.$colormain2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 44px;
+
+    .container {
+        padding: 22px;
+        max-width: 680px;
+        background-image: url(../images/bgmain.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 10px 5px 5px #000;
+        border-radius: 4%;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.5;
+            border-radius: 4%;
+        }
+
+        @media (max-width: 760px) {
+            width: 80%;
+        }
+
+        .section1, .section3 {
+            position: relative;
+            display: flex;
+            gap: 18px;
+
+            @media (max-width: 760px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .section2 {
+            position: relative;
+            margin-bottom: 28px;
+
+            @media (max-width: 760px) {
+                text-align: center;
+            }
+        }
+
+        h1 {
+            color: variaveis.$colormain1;
+            text-shadow: #000 2px 3px 2px;
+            font-size: 28px;
+            margin-bottom: 12px;
+
+            @media (max-width: 760px) {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        h2 {
+            color: variaveis.$colormain1;
+            text-shadow: #000 2px 3px 2px;
+            font-size: 18px;
+            margin-bottom: 8px;
+            text-align: center;
+
+            @media (max-width: 760px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

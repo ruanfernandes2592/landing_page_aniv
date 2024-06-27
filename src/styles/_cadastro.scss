@@ -1,0 +1,50 @@
+@use "variaveis";
+
+.section1__cadastro {
+    position: relative;
+    width: 200px;
+    color: variaveis.$textColor2;
+
+    &__form {
+        width: 220px;
+
+        @media (max-width: 760px) {
+            margin-bottom: 22px;
+        }
+
+        #contador {
+            color: variaveis.$textColor1;
+            font-size: 16px;
+
+            @media (max-width: 760px) {
+                font-size: 12px;
+            }
+        }
+        input {
+            width: 100%;
+            border: none;
+            padding: 4px;
+            margin-bottom: 2px;
+            background-color: variaveis.$inputColor;
+            color: variaveis.$textColor2;
+            outline: none;
+
+            @media (max-width: 760px) {
+            width: 80%;
+        }
+        }
+    
+        .button {
+            padding: 2px 12px;
+            margin-top: 6px;
+            background-color: variaveis.$colormain1;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+    
+            &:hover {
+                background-color: lighten(variaveis.$colormain1, 3%);
+            }
+        }
+    }
+}
